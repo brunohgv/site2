@@ -1,0 +1,121 @@
+body{
+	font-family: 'Titillium Web', sans-serif;
+  	background-color: #f2f2f2;
+}
+
+.top-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../assets/img/iphone-desk-laptop-notebook.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+
+.top-image h1{
+	text-align: center;
+	color: #fff;
+	font-size: 4em;
+}
+
+.top-image .container{
+	display: block;
+	text-align: center;
+}
+
+.top-image .container .btn{
+	background-color: #3D4A84;
+	color: #fff;
+}
+
+.title-group{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.card{
+	margin-bottom: 1em;
+}
+
+.icon-color{
+	color: #212738;
+}
+
+.card:hover .icon-color{
+	color: #3D4A84;
+}
+
+/* footer */
+
+.custom-contact{
+	padding: 3em;
+	background-color: #212738;
+	color: #F8F9FA;
+	text-align: center;
+	margin: 0;
+}
+
+.custom-contact h6{
+	margin-left: 3em;
+}
+
+.custom-contact img{
+	height: 100px;
+}
+
+.custom-footer{
+	padding: 5px;
+	background-color: #141721;
+	color: #F8F9FA;
+	margin: 0;
+}
+
+.custom-footer p {
+	margin: 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+
+
+/* Social Bar */
+
+
+.social-bar {
+  position: fixed;
+  left: -15px;
+  top: 40%;
+  background-color: white;
+}
+.social-bar__item {
+  padding: 10px 10px 10px 25px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  transition-property: transform, opacity;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.social-bar__item:hover {
+  transform: translate(15px);
+  opacity: 0.9;
+}
+.social-bar__fb {
+  background-color: #3b5999;
+}
+.social-bar__twitter {
+  background-color: #55acee;
+}
+.social-bar__linkedin {
+  background-color: #0077B5;
+}
+.social-bar__instagram {
+  background-color: #e4405f;
+}
+.social-bar__printerest {
+  background-color: #bd081c;
+}
+
