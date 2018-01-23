@@ -3,6 +3,15 @@ body{
   	background-color: #f2f2f2;
 }
 
+.navbar{
+	-webkit-transition: ease 0.4s; /* Safari */
+    transition: ease 0.4s;
+}
+
+.opacity{
+	opacity: 0.9;
+}
+
 .top-image{
 	display: flex;
 	justify-content: center;
@@ -10,7 +19,7 @@ body{
 	background-image: url("../assets/img/iphone-desk-laptop-notebook.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 650px;
 }
 
 .top-image h1{
@@ -37,6 +46,11 @@ body{
 
 .card{
 	margin-bottom: 1em;
+	transition-property: font-weight;
+}
+
+.card:hover h5{
+	font-weight: bold;
 }
 
 .icon-color{
