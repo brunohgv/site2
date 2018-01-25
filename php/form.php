@@ -1,4 +1,5 @@
 <?php
+/*
 	if (isset($_POST['nome']) && isset($_POST['sobrenome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['assunto']) && isset($_POST['msg'])) {
 		if (!empty($_POST['nome']) && !empty($_POST['sobrenome']) && !empty($_POST['email']) && !empty($_POST['telefone']) && !empty($_POST['assunto']) && !empty($_POST['msg'])) {
 			$fname = $_POST['nome'];
@@ -34,5 +35,27 @@
 	} else {
 		echo "Falha na primeira verificaçao";
 	}
+*/
+	if (isset($_POST['nome']) && isset($_POST['sobrenome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['assunto']) && isset($_POST['msg'])) {
+			$fname = $_POST['nome'];
+			$lname = $_POST['sobrenome'];
+			$email = $_POST['email'];
+			$phone = $_POST['telefone'];
+			$subject_form = $_POST['assunto'];
+			$msg = $_POST['mensagem'];
+
+			$to = 'mailler@seedabit.org.br';
+			$from = $email;
+
+			$headers = "From: ".$email;
+			$message = "Nome: ".$fname." ".$lname."\n"."Telefone: ".$phone."\n"."Email: ".$email."\n\n"."Assunto: ".$subject_form."\n\n".$msg;
+			
+			if (mail($to, $subject, $message, $headers)) {
+				echo "sucesso";
+				} else {
+				echo "Algo de errado aconteceu! Tente novamente mais tarde";
+			}
+	}
+
 
 ?>

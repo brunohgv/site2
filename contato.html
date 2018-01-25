@@ -17,7 +17,7 @@
 
   <!-- icon -->
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/TabIconSiteSeedSemFundo.png" />
-  
+
   <title>Seed a Bit Tecnologia</title>
 </head>
 <body>
@@ -68,28 +68,28 @@
     
     <div class="background-white">
       <div class="wraper">
-        <form action="php/form.php" method="POST" name="contact-form">
+        <form id="contact-form" onsubmit="submitForm(); return false;" name="contact-form">
           <div class="form-row">
             <div class="col-md-6 mb-3">
-              <input type="text" class="form-control" placeholder="Nome" name="nome" >
+              <input id="nome" type="text" class="form-control" placeholder="Nome" name="nome" >
             </div>
             <div class="col-md-6 mb-3">
-              <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome" >
+              <input id="sobrenome" type="text" class="form-control" placeholder="Sobrenome" name="sobrenome" >
             </div>
             <div class="col-md-6 mb-3">
-              <input type="email" class="form-control" placeholder="Email" name="email" >
+              <input id="email" type="email" class="form-control" placeholder="Email" name="email" >
             </div>
             <div class="col-md-6 mb-3">
-              <input type="tel" class="form-control" placeholder="Telefone" name="telefone" >
+              <input id="telefone" type="tel" class="form-control" placeholder="Telefone" name="telefone" >
             </div>
             <div class="col-md-12 mb-3">
-              <input type="text" class="form-control" placeholder="Assunto" name="assunto" >
+              <input id="assunto" type="text" class="form-control" placeholder="Assunto" name="assunto" >
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control" rows="4" placeholder="Mensagem" name="msg" ></textarea>
+              <textarea id="mensagem" class="form-control" rows="4" placeholder="Mensagem" name="msg" ></textarea>
             </div>
             <div class="col-md-12">
-              <button id="submit-btn" type="submit" class="btn btn-primary mb-2" value="submit">Enviar</button>
+              <button id="submit-btn" type="submit" class="btn btn-primary mb-2" value="submit"><span id="status">Enviar</span></button>
             </div>
           </div>
     
@@ -167,6 +167,9 @@
 
   <!-- Custom Javascript -->
   <script type="text/javascript" src="js/scripts.js"></script>
+
+  <!-- AJAX -->
+  <script type="text/javascript" src="js/form.js"></script>
 
 
 </body>

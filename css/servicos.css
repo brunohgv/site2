@@ -15,20 +15,21 @@ body{
 .top-image{
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	background-image: url("../assets/img/iphone-desk-laptop-notebook.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 650px;
+	height: 250px;
 }
 
 .top-image h1{
 	text-align: center;
+	opacity: 0.9;
+	background-color: #212738;
+	margin-bottom: 0; 
 	color: #fff;
 	font-size: 4em;
 }
-
-
 
 .top-image .container{
 	display: block;
@@ -63,6 +64,37 @@ body{
 	color: #3D4A84;
 }
 
+.background-white{
+	background-color: white;
+	padding: 20px;
+	border: 1px solid #D9D9D9;
+	border-radius: 10px;
+	margin-bottom: 2em;
+}
+
+.background-white p{
+	text-align: justify;
+}
+
+.background-white img{
+	float: left;
+	width: 50%;
+	margin-right: 15px;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+@media (max-width: 767.98px){
+	.top-image h1{
+		font-size: 46px;
+	}
+}
+
+.media i{
+	margin-right: 40px;
+	margin-left: 20px; 
+}
+
 /* footer */
 
 .custom-contact{
@@ -93,6 +125,8 @@ body{
 	font-size: 12px;
 	text-align: center;
 }
+
+
 
 
 /* Social Bar */
@@ -132,4 +166,3 @@ body{
 .social-bar__printerest {
   background-color: #bd081c;
 }
-
