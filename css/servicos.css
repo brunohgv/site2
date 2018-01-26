@@ -178,6 +178,10 @@ body{
 	.top-image h1{
 		font-size: 46px;
 	}
+	
+	.custom-contact .col-md-6{
+		margin-top: 1em;
+	}
 
 	.social-bar{
 		visibility: hidden;

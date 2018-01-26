@@ -49,11 +49,6 @@ body{
 
 .card{
 	margin-bottom: 1em;
-	transition-property: font-weight;
-}
-
-.card:hover h5{
-	font-weight: bold;
 }
 
 .icon-color{
@@ -180,4 +175,12 @@ body{
 
 #icon-contact:hover{
 	color: #595E6C;
+}
+
+.card h5{
+	margin: 0;
+}
+
+.card button{
+	padding-left: 0;
 }
