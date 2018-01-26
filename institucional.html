@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/institucional.css">
 
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
 
@@ -20,7 +22,16 @@
 
   <title>Seed a Bit Tecnologia</title>
 </head>
-<body>
+<body onload="myFunction()">
+
+  <div id="loader" class="loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <div style="display: none;" id="myDiv">
+
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top opacity" style="background-color: #212738;">
     <a class="navbar-brand" href="index.html">
@@ -72,7 +83,7 @@
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          A empresa
+          A Empresa
         </button>
       </h5>
     </div>
@@ -207,6 +218,21 @@
 -->
 
 </div>
+</div>
+
+
+<script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 0);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+</script>
 
 
 <!-- Optional JavaScript -->
