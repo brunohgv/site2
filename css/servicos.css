@@ -50,6 +50,9 @@ body{
 .card{
 	margin-bottom: 1em;
 	transition-property: font-weight;
+
+	-webkit-transition: ease 2s; 
+    transition: ease 2s;
 }
 
 .card:hover h5{
@@ -84,12 +87,6 @@ body{
 	margin-top: 5px;
 }
 
-@media (max-width: 767.98px){
-	.top-image h1{
-		font-size: 46px;
-	}
-}
-
 .media i{
 	margin-right: 40px;
 	margin-left: 20px; 
@@ -104,8 +101,6 @@ body{
 	text-align: center;
 	margin: 0;
 }
-
-
 
 .custom-contact img{
 	height: 100px;
@@ -176,4 +171,15 @@ body{
 
 #icon-contact:hover{
 	color: #595E6C;
+}
+
+
+@media (max-width: 767.98px){
+	.top-image h1{
+		font-size: 46px;
+	}
+
+	.social-bar{
+		visibility: hidden;
+	}
 }

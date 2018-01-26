@@ -36,6 +36,25 @@ body{
 	margin-bottom: 2em;
 }
 
+.background-white p{
+	margin-bottom: 5px;
+}
+
+.background-white h5{
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+.background-white h6{
+	margin-bottom: 0px;
+}
+
+.icon-social{
+	color: #212738;
+	margin-top: 2em;
+}
+
 
 .top-image .container{
 	display: block;
@@ -44,6 +63,10 @@ body{
 
 .top-image .container .btn{
 	background-color: #3D4A84;
+	color: #fff;
+}
+.top-image .container .btn:hover{
+	background-color: #212738;
 	color: #fff;
 }
 

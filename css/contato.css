@@ -83,6 +83,9 @@ body{
 	.top-image h1{
 		font-size: 46px;
 	}
+	.social-bar{
+		visibility: hidden;
+	}
 }
 
 

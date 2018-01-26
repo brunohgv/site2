@@ -79,7 +79,7 @@ body{
 
 .background-white img{
 	float: left;
-	max-width: 100%;
+	max-width: 50%;
 	margin-right: 15px;
 	border-radius: 10px;
 	margin-top: 5px;
@@ -88,6 +88,15 @@ body{
 @media (max-width: 767.98px){
 	.top-image h1{
 		font-size: 46px;
+	}
+	.background-white img{
+		max-width: 100%;
+	}
+	.custom-contact .col-md-6{
+		margin-top: 1em;
+	}
+	.social-bar{
+		visibility: hidden;
 	}
 }
 
