@@ -105,19 +105,19 @@ body{
 	margin: 0;
 }
 
-.custom-contact h6{
-	margin-left: 3em;
-}
+
 
 .custom-contact img{
 	height: 100px;
 }
 
 .custom-footer{
+	display: flex;
 	padding: 5px;
 	background-color: #141721;
 	color: #F8F9FA;
 	margin: 0;
+	justify-content: center;
 }
 
 .custom-footer p {
@@ -125,6 +125,7 @@ body{
 	font-size: 12px;
 	text-align: center;
 }
+
 
 
 
@@ -149,7 +150,6 @@ body{
 }
 .social-bar__item:hover {
   transform: translate(15px);
-  opacity: 0.9;
 }
 .social-bar__fb {
   background-color: #3b5999;
@@ -165,4 +165,15 @@ body{
 }
 .social-bar__printerest {
   background-color: #bd081c;
+}
+
+#icon-contact{
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #F8F9FA;
+}
+
+#icon-contact:hover{
+	color: #595E6C;
 }
