@@ -15,10 +15,10 @@ function submitForm () {
 
 	var ajax = new XMLHttpRequest();
 	ajax.open("POST", "../php/form.php");
-	ajax.onreadystatechange() = function() {
-		if (ajax.readyState == 4 && ajaxStatus == 200) {
+	ajax.onreadystatechange = function() {
+		if (ajax.readyState == 4 && ajax.status == 200) {
 			if (ajax.responseText == "sucesso"){
-				_("contact-form").innerHTML = '<h2>Obrigado, ' + _('nome').value + ". Responderemos o mais rápido possível!";
+				_("contact_form").innerHTML = '<h2>Obrigado pela mensagem, ' + _('nome').value + ". Responderemos o mais rápido possível!</h2><br><button";
 			}
 			else{
 				_("status").innerHTML = ajax.responseText;

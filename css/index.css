@@ -8,6 +8,10 @@ body{
     transition: ease 0.4s;
 }
 
+.bottom{
+	bottom: 0;
+}
+
 .opacity{
 	opacity: 0.9;
 }

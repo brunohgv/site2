@@ -8,6 +8,10 @@ body{
     transition: ease 0.4s;
 }
 
+.bottom{
+	bottom: 0;
+}
+
 .opacity{
 	opacity: 0.9;
 }
@@ -48,11 +52,17 @@ body{
 }
 
 .card{
+	display: flex;
 	margin-bottom: 1em;
 	transition-property: font-weight;
+	width: 100%;
 
 	-webkit-transition: ease 2s; 
     transition: ease 2s;
+}
+
+.card-link{
+	align-self: flex-end;
 }
 
 .card:hover h5{
